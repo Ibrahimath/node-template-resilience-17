@@ -11,6 +11,8 @@
   "scripts": {
     "start": "node bootstrap.js",
     "dev": "node --watch bootstrap.js",
+    "lint": "eslint . --ext .js",
+    "build": "npm run lint",
     "test": "set USE_MOCK_MODEL=1 && mocha --recursive --require dotenv/config",
     "prepare": "husky",
     "commitlint": "commitlint --edit",
